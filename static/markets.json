@@ -1,0 +1,562 @@
+[
+    {
+        "city": "Amman", 
+        "close": "12:00", 
+        "country": "Jordan", 
+        "id": "ASE", 
+        "name": "Amman Stock Exchange", 
+        "open": "10:00", 
+        "tz": "Asia/Amman"
+    }, 
+    {
+        "city": "Sydney", 
+        "close": "16:00", 
+        "country": "Australia", 
+        "id": "ASX", 
+        "name": "Australian Securities Exchange", 
+        "open": "10:00", 
+        "tz": "Australia/Sydney"
+    }, 
+    {
+        "city": "Beirut", 
+        "close": "12:30", 
+        "country": "Lebanon", 
+        "id": "BSE", 
+        "name": "Beirut Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Beirut"
+    }, 
+    {
+        "city": "Berne", 
+        "close": "16:30", 
+        "country": "Switzerland", 
+        "id": "BX", 
+        "name": "Berne eXchange", 
+        "open": "09:00", 
+        "tz": "Europe/Zurich"
+    }, 
+    {
+        "city": "S\u00e3o Paulo", 
+        "close": "17:30", 
+        "country": "Brazil", 
+        "id": "Bovespa", 
+        "name": "Bolsa de Valores de S\u00e3o Paulo", 
+        "open": "10:00", 
+        "tz": "America/Sao_Paulo"
+    }, 
+    {
+        "city": "Mumbai", 
+        "close": "15:30", 
+        "country": "India", 
+        "id": "BSE", 
+        "name": "Bombay Stock Exchange", 
+        "open": "09:15", 
+        "tz": "Asia/Kolkata"
+    }, 
+    {
+        "city": "Istanbul", 
+        "close": "17:30", 
+        "country": "Turkey", 
+        "id": "ISE", 
+        "lunch": "12:30-14:00", 
+        "name": "Borsa Istanbul", 
+        "open": "09:30", 
+        "tz": "Asia/Istanbul"
+    }, 
+    {
+        "city": "Budapest", 
+        "close": "17:00", 
+        "country": "Hungary", 
+        "id": "BSE", 
+        "name": "Budapest Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Budapest"
+    }, 
+    {
+        "city": "Buenos Aires", 
+        "close": "17:00", 
+        "country": "Argentina", 
+        "id": "BCBA", 
+        "name": "Buenos Aires Stock Exchange", 
+        "open": "11:00", 
+        "tz": "America/Argentina/Buenos_Aires"
+    }, 
+    {
+        "city": "Kuala Lumpur", 
+        "close": "17:00", 
+        "country": "Malaysia", 
+        "id": "MYX", 
+        "lunch": "12:30-14:30", 
+        "name": "Bursa Malaysia", 
+        "open": "09:00", 
+        "tz": "Asia/Kuala_Lumpur"
+    }, 
+    {
+        "city": "Chittagong", 
+        "close": "14:30", 
+        "country": "Bangladesh", 
+        "id": "CSE", 
+        "name": "Chittagong Stock Exchange", 
+        "open": "10:30", 
+        "tz": "Asia/Dhaka"
+    }, 
+    {
+        "city": "Colombo", 
+        "close": "14:30", 
+        "country": "Sri Lanka", 
+        "id": "CSE", 
+        "name": "Colombo Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Colombo"
+    }, 
+    {
+        "city": "Copenhagen", 
+        "close": "17:00", 
+        "country": "Denmark", 
+        "id": "CSE", 
+        "name": "Copenhagen Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Copenhagen"
+    }, 
+    {
+        "city": "Dar-es-Salaam", 
+        "close": "17:00", 
+        "country": "Tanzania", 
+        "id": "DSE", 
+        "name": "Dar-es-Salaam Stock Exchange", 
+        "open": "08:00", 
+        "tz": "Africa/Dar_es_Salaam"
+    }, 
+    {
+        "city": "Dhaka", 
+        "close": "14:30", 
+        "country": "Bangladesh", 
+        "id": "DSE", 
+        "name": "Dhaka Stock Exchange", 
+        "open": "10:30", 
+        "tz": "Asia/Dhaka"
+    }, 
+    {
+        "city": "Eschborn", 
+        "close": "22:00", 
+        "country": "Germany", 
+        "id": "EUREX", 
+        "name": "Eurex Exchange", 
+        "open": "08:00", 
+        "tz": "Europe/Berlin"
+    }, 
+    {
+        "city": "Amsterdam", 
+        "close": "17:40", 
+        "country": "Netherlands", 
+        "id": "AMS", 
+        "name": "Euronext Amsterdam", 
+        "open": "09:00", 
+        "tz": "Europe/Amsterdam"
+    }, 
+    {
+        "city": "Lisboa", 
+        "close": "16:30", 
+        "country": "Portugal", 
+        "id": "PSI", 
+        "name": "Euronext Lisbon", 
+        "open": "08:00", 
+        "tz": "Europe/Lisbon"
+    }, 
+    {
+        "city": "Paris", 
+        "close": "17:30", 
+        "country": "France", 
+        "id": "EPA", 
+        "name": "Euronext Paris", 
+        "open": "09:00", 
+        "tz": "Europe/Paris"
+    }, 
+    {
+        "city": "Frankfurt", 
+        "close": "20:00", 
+        "country": "Germany", 
+        "id": "FSX", 
+        "name": "Frankfurt Stock Exchange", 
+        "open": "08:00", 
+        "tz": "Europe/Berlin"
+    }, 
+    {
+        "city": "Hanoi", 
+        "close": "14:45", 
+        "country": "Vietnam", 
+        "id": "HNX", 
+        "lunch": "11:30-13:00", 
+        "name": "Hanoi Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Ho_Chi_Minh"
+    }, 
+    {
+        "city": "Helsinki", 
+        "close": "18:30", 
+        "country": "Finland", 
+        "id": "OMX", 
+        "name": "Helsinki Stock Exchange", 
+        "open": "10:00", 
+        "tz": "Europe/Helsinki"
+    }, 
+    {
+        "city": "Hochiminh", 
+        "close": "14:45", 
+        "country": "Vietnam", 
+        "id": "HOSE", 
+        "lunch": "11:30-13:00", 
+        "name": "Hochiminh Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Ho_Chi_Minh"
+    }, 
+    {
+        "city": "Hong Kong", 
+        "close": "16:00", 
+        "country": "Hong Kong", 
+        "id": "HKFE", 
+        "lunch": "12:00-13:00", 
+        "name": "Hong Kong Futures Exchange", 
+        "open": "09:15", 
+        "tz": "Asia/Hong_Kong"
+    }, 
+    {
+        "city": "Hong Kong", 
+        "close": "16:00", 
+        "country": "Hong Kong", 
+        "id": "HKEX", 
+        "lunch": "12:00-13:00", 
+        "name": "Hong Kong Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Hong_Kong"
+    }, 
+    {
+        "city": "Jakarta", 
+        "close": "16:00", 
+        "country": "Indonesia", 
+        "id": "IDX", 
+        "name": "Indonesia Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Jakarta"
+    }, 
+    {
+        "city": "Dublin", 
+        "close": "16:30", 
+        "country": "Ireland", 
+        "id": "ISE", 
+        "name": "Irish Stock Exchange", 
+        "open": "08:00", 
+        "tz": "Europe/Dublin"
+    }, 
+    {
+        "city": "Kingston", 
+        "close": "13:00", 
+        "country": "Jamaica", 
+        "id": "JSE", 
+        "name": "Jamaica Stock Exchange", 
+        "open": "09:00", 
+        "tz": "America/Jamaica"
+    }, 
+    {
+        "city": "Johannesburg", 
+        "close": "17:00", 
+        "country": "South Africa", 
+        "id": "JSE", 
+        "name": "Johannesburg Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Africa/Johannesburg"
+    }, 
+    {
+        "city": "Busan & Seoul", 
+        "close": "15:30", 
+        "country": "South Korea", 
+        "id": "KRX", 
+        "name": "Korea Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Seoul"
+    }, 
+    {
+        "city": "London", 
+        "close": "16:30", 
+        "country": "United Kingdom", 
+        "id": "LSE", 
+        "name": "London Stock Exchange", 
+        "open": "08:00", 
+        "tz": "Europe/London"
+    }, 
+    {
+        "city": "Luxembourg City", 
+        "close": "17:35", 
+        "country": "Luxembourg", 
+        "id": "LuxSE", 
+        "name": "Luxembourg Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Luxembourg"
+    }, 
+    {
+        "city": "Valletta", 
+        "close": "12:30", 
+        "country": "Malta", 
+        "id": "MSE", 
+        "name": "Malta Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Europe/Malta"
+    }, 
+    {
+        "city": "Mexico City", 
+        "close": "15:00", 
+        "country": "Mexico", 
+        "id": "BMV", 
+        "name": "Mexican Stock Exchange", 
+        "open": "08:30", 
+        "tz": "America/Mexico_City"
+    }, 
+    {
+        "city": "Milan", 
+        "close": "17:25", 
+        "country": "Italy", 
+        "id": "MTA", 
+        "name": "Milan Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Rome"
+    }, 
+    {
+        "city": "Moscow", 
+        "close": "18:45", 
+        "country": "Russia", 
+        "id": "MOEX", 
+        "name": "Moscow Exchange", 
+        "open": "10:00", 
+        "tz": "Europe/Moscow"
+    }, 
+    {
+        "city": "New York", 
+        "close": "16:00", 
+        "country": "United States", 
+        "id": "NASDAQ", 
+        "name": "NASDAQ", 
+        "open": "09:30", 
+        "tz": "America/New_York"
+    }, 
+    {
+        "city": "Nairobi", 
+        "close": "15:00", 
+        "country": "Kenya", 
+        "id": "NSE", 
+        "name": "Nairobi Securities Exchange", 
+        "open": "09:30", 
+        "tz": "Africa/Nairobi"
+    }, 
+    {
+        "city": "Mumbai", 
+        "close": "15:30", 
+        "country": "India", 
+        "id": "NSE", 
+        "name": "National Stock Exchange of India", 
+        "open": "09:15", 
+        "tz": "Asia/Kolkata"
+    }, 
+    {
+        "city": "New York", 
+        "close": "16:00", 
+        "country": "United States", 
+        "id": "NYSE", 
+        "name": "New York Stock Exchange", 
+        "open": "09:30", 
+        "tz": "America/New_York"
+    }, 
+    {
+        "city": "Wellington", 
+        "close": "16:45", 
+        "country": "New Zealand", 
+        "id": "NZSX", 
+        "name": "New Zealand Stock Market", 
+        "open": "10:00", 
+        "tz": "Pacific/Auckland"
+    }, 
+    {
+        "city": "Lagos", 
+        "close": "16:00", 
+        "country": "Nigeria", 
+        "id": "NSE", 
+        "name": "Nigerian Stock Exchange", 
+        "open": "10:00", 
+        "tz": "Africa/Lagos"
+    }, 
+    {
+        "city": "Oslo", 
+        "close": "16:30", 
+        "country": "Norway", 
+        "id": "OSE", 
+        "name": "Oslo Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Oslo"
+    }, 
+    {
+        "city": "Karachi", 
+        "close": "15:30", 
+        "country": "Pakistan", 
+        "id": "PSX", 
+        "name": "Pakistan Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Karachi"
+    }, 
+    {
+        "city": "Manila", 
+        "close": "15:30", 
+        "country": "Philippines", 
+        "id": "PSE", 
+        "lunch": "12:00-13:30", 
+        "name": "Philippine Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Manila"
+    }, 
+    {
+        "city": "Riga", 
+        "close": "16:00", 
+        "country": "Latvia", 
+        "id": "OMXR", 
+        "name": "Riga Stock Exchange", 
+        "open": "10:00", 
+        "tz": "Europe/Riga"
+    }, 
+    {
+        "city": "Riyadh", 
+        "close": "15:00", 
+        "country": "Saudi Arabia", 
+        "id": "TADAWUL", 
+        "name": "Saudi Stock Exchange", 
+        "open": "10:00", 
+        "tz": "Asia/Riyadh"
+    }, 
+    {
+        "city": "Shanghai", 
+        "close": "15:00", 
+        "country": "China", 
+        "id": "SSE", 
+        "lunch": "11:30-13:00", 
+        "name": "Shanghai Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Shanghai"
+    }, 
+    {
+        "city": "Shenzhen", 
+        "close": "15:00", 
+        "country": "China", 
+        "id": "SZSE", 
+        "lunch": "11:30-13:00", 
+        "name": "Shenzhen Stock Exchange", 
+        "open": "09:30", 
+        "tz": "Asia/Shanghai"
+    }, 
+    {
+        "city": "Singapore", 
+        "close": "17:00", 
+        "country": "Singapore", 
+        "id": "SGX", 
+        "name": "Singapore Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Singapore"
+    }, 
+    {
+        "city": "Madrid", 
+        "close": "17:30", 
+        "country": "Spain", 
+        "id": "BME", 
+        "name": "Spanish Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Madrid"
+    }, 
+    {
+        "city": "Bangkok", 
+        "close": "16:30", 
+        "country": "Thailand", 
+        "id": "SET", 
+        "lunch": "12:30-14:30", 
+        "name": "Stock Exchange of Thailand", 
+        "open": "10:00", 
+        "tz": "Asia/Bangkok"
+    }, 
+    {
+        "city": "Stockholm", 
+        "close": "17:30", 
+        "country": "Sweden", 
+        "id": "OMX", 
+        "name": "Stockholm Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Stockholm"
+    }, 
+    {
+        "city": "Zurich", 
+        "close": "17:30", 
+        "country": "Switzerland", 
+        "id": "SIX", 
+        "name": "Swiss Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Zurich"
+    }, 
+    {
+        "city": "Taipei", 
+        "close": "13:30", 
+        "country": "Taiwan (Republic of China)", 
+        "id": "TWSE", 
+        "name": "Taiwan Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Taipei"
+    }, 
+    {
+        "city": "Tel Aviv", 
+        "close": "17:30", 
+        "country": "Israel", 
+        "id": "TASE", 
+        "name": "Tel Aviv Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Jerusalem"
+    }, 
+    {
+        "city": "Tokyo", 
+        "close": "15:00", 
+        "country": "Japan", 
+        "id": "TSE", 
+        "lunch": "11:30-12:30", 
+        "name": "Tokyo Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Asia/Tokyo"
+    }, 
+    {
+        "city": "Toronto", 
+        "close": "16:00", 
+        "country": "Canada", 
+        "id": "TSX", 
+        "name": "Toronto Stock Exchange", 
+        "open": "09:30", 
+        "tz": "America/Toronto"
+    }, 
+    {
+        "city": "Kiev", 
+        "close": "17:30", 
+        "country": "Ukraine", 
+        "id": "UX", 
+        "name": "Ukrainian Exchange", 
+        "open": "10:00", 
+        "tz": "Europe/Kiev"
+    }, 
+    {
+        "city": "Warsaw", 
+        "close": "17:00", 
+        "country": "Poland", 
+        "id": "GPW", 
+        "name": "Warsaw Stock Exchange", 
+        "open": "09:00", 
+        "tz": "Europe/Warsaw"
+    }, 
+    {
+        "city": "Vienna", 
+        "close": "17:35", 
+        "country": "Austria", 
+        "id": "VSE", 
+        "name": "Wiener B\u00f6rse AG", 
+        "open": "08:55", 
+        "tz": "Europe/Vienna"
+    }
+]
