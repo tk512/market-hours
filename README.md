@@ -1,6 +1,6 @@
-# test-proj
+# market-hours
 
-> A Vue.js project
+> Real-time overview of opening and closing times for stock markets worldwide. Built in Vue.js
 
 ## Build Setup
 
@@ -27,4 +27,5 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Screenshot
+<img src="https://raw.githubusercontent.com/tk512/market-hours/master/static/markethours-screenshot.png">
