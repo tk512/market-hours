@@ -99,6 +99,7 @@ styles:
 
 ### Bootstrap scripts
 scripts:
+  util: true
   alert: true
   button: true
   carousel: true
@@ -109,4 +110,3 @@ scripts:
   tab: true
   #tooltip: true
   #popover: true
-  util: true

@@ -22,12 +22,12 @@
             <a class="nav-link" href="#/about">About</a>
           </li>
         </ul>
+        <span class="badge badge-pill badge-default test" id="your-time">
+        Your Time: {{ localTimeDisplayed }}
+          <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
+        </span>
       </div>
 
-      <span class="badge badge-pill badge-default test" id="your-time">
-        Your Time: {{ localTimeDisplayed }}
-        <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
-        </span>
     </nav>
     <router-view></router-view>
   </div>
@@ -77,6 +77,6 @@
 
   #your-time {
     background-color: #585858;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
   }
 </style>
