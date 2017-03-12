@@ -7,17 +7,19 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <i class="fa fa-line-chart" aria-hidden="true"></i>
-
-        MarketHours</a>
-
+        <i class="fa fa-line-chart" aria-hidden="true"></i> Market Hours</a>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item" v-bind:class="{'active': $route.path==='/'}">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link disabled" href="#">API</a>
+          </li>
+          -->
+          <li class="nav-item" v-bind:class="{'active': $route.path==='/about'}">
+            <a class="nav-link" href="#/about">About</a>
           </li>
         </ul>
       </div>
