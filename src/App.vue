@@ -20,12 +20,12 @@
             <a class="nav-link disabled" href="#">API</a>
           </li>
         </ul>
-
-        <button class="btn btn-secondary btn-sm"><i class="fa fa-globe"></i>
-          {{ timeZone }}
-          {{ now}}
-        </button>
       </div>
+
+      <span class="badge badge-pill badge-default test" id="your-time">
+        Your Time: {{ localTimeDisplayed }}
+        <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
+        </span>
     </nav>
     <router-view></router-view>
   </div>
@@ -33,12 +33,28 @@
 
 <script>
   import shared from './shared'
+  import moment from 'moment-timezone'
   export default {
     name: 'app',
+    mounted () {
+      this.initClockTimer()
+    },
+    methods: {
+      initClockTimer: function () {
+        let vm = this
+        var updateTime = function () {
+          let localTimeZone = moment.tz(shared.clientTz)
+          let tzAbbr = localTimeZone.zoneAbbr()
+          let curTime = localTimeZone.format('HH:mm:ss')
+          vm.localTimeDisplayed = curTime + ' ' + tzAbbr
+        }
+        updateTime()
+        setInterval(updateTime, 1000)
+      }
+    },
     data () {
       return {
-        timeZone: shared.clientTz,
-        now: null
+        localTimeDisplayed: null
       }
     }
   }
@@ -55,5 +71,10 @@
 
   #app > nav {
     margin-bottom: 20px;
+  }
+
+  #your-time {
+    background-color: #585858;
+    padding: 10px 10px 10px 10px;
   }
 </style>

@@ -21,6 +21,10 @@
       }
     },
     methods: {
+      /**
+       * @param market
+       * @returns True if market is open and false if it is closed
+       */
       isMarketOpen: function (market) {
         const place = moment.tz(market.tz)
         const opensTime = moment(market.open, 'HH:mm')
@@ -30,6 +34,8 @@
         const c = place.clone().hour(closesTime.hour()).minute(closesTime.minute()).second(0)
 
         let isOpen
+
+        // Lunch check
         if ('lunch' in market) {
           let lunchParts = market['lunch'].split('-')
           const lBeginTime = moment(lunchParts[0], 'HH:mm')
@@ -39,7 +45,13 @@
           isOpen = place.isBetween(o, c)
         }
 
-        // If market is open
+        // Weekends check
+        if (place.isoWeekday() === 0 || place.isoWeekday() === 7) {
+          isOpen = false
+        }
+
+        // Public holiday check per exchange
+
         if (isOpen) {
           this.show = this.showOpenMarkets
         } else {
@@ -50,7 +62,7 @@
 
       timeDifference: function (otherTz) {
         const there = moment.tz(otherTz)
-        const here = moment.tz('Africa/Johannesburg')
+        const here = moment.tz(shared.clientTz)
         const diff = (there.utcOffset() - here.utcOffset()) / 60
         return (diff > 0 ? '+' : '') + (diff === 0 ? '+0' : diff)
       }
