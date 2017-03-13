@@ -57,7 +57,7 @@
   import MarketItem from './MarketItem.vue'
   import marketData from '../../static/markets.json'
 
-  // By using a hidden field we encourage vuejs to refresh the DOM
+  // By using a hidden field we encourage vuejs to refresh the DOM style classes
   function refreshMarkets (markets) {
     markets.map(m => {
       m.hidden = '' + new Date().getTime()
@@ -73,7 +73,7 @@
       MarketItem
     },
     mounted () {
-      var vm = this
+      let vm = this
       setInterval(() => {
         this.now = Math.trunc((new Date()).getTime() / 1000)
         if (new Date().getSeconds() === 0) {
