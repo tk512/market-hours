@@ -1,6 +1,8 @@
-# market-hours
+# Market Hours
 
 > Real-time overview of opening and closing times for stock markets worldwide. Built in Vue.js
+
+> As used by <a href="https://markethours.today">markethours.today</a>
 
 ## Build Setup
 
@@ -27,5 +29,5 @@ npm run e2e
 npm test
 ```
 
-## Screenshot
+## Screenshot of <a href="https://markethours.today">markethours.today</a>
 <img src="https://raw.githubusercontent.com/tk512/market-hours/master/static/markethours-screenshot.png">
