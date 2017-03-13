@@ -32,7 +32,7 @@
       <thead>
       <tr>
         <th>Name</th>
-        <th>Code</th>
+        <th class="hidden-md-down">Code</th>
         <th>Location</th>
         <th>Open</th>
         <th>Close</th>
@@ -114,5 +114,6 @@
 
   .container {
     padding-top: 10px;
+    width: 85%;
   }
 </style>

@@ -1,7 +1,7 @@
 <template xmlns:v-bind="http://www.w3.org/1999/xhtml">
   <tr v-bind:class="[ isMarketOpen(market) ? 'bg-success' : 'bg-danger', '']" v-show="show">
     <th scope="row">{{ market.name }} <span class="hidden">{{ market.hidden }}</span></th>
-    <td>{{market.id}}</td>
+    <td class="hidden-md-down">{{market.id}}</td>
     <td>{{market.city}}, {{market.country}} ({{ timeZone }}{{timeDifference(market.tz)}})</td>
     <td>{{market.open}}</td>
     <td>{{market.close}}</td>
