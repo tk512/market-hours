@@ -27,7 +27,6 @@
           <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
         </span>
       </div>
-
     </nav>
     <router-view></router-view>
   </div>

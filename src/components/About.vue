@@ -7,17 +7,17 @@
         Shows which stock exchanges are currently open and closed
       </p>
       <ul class="list-unstyled">
-        <li>
+        <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
         </span> Supports {{ marketCount }} (and counting!) stock and future exchanges worldwide.
         </li>
-        <li>
+        <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
         </span> Updates in real-time - no need to refresh your browser
         </li>
-        <li>
+        <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
         </span> Web app is open source (MIT license) and can be found on its <a
@@ -26,7 +26,6 @@
         </li>
       </ul>
     </div>
-
   </div>
 
 </template>
@@ -44,4 +43,7 @@
 </script>
 
 <style scoped>
+  .about-item {
+    margin-bottom: 4px;
+  }
 </style>

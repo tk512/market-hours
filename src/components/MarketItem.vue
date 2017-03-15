@@ -1,21 +1,40 @@
-<template xmlns:v-bind="http://www.w3.org/1999/xhtml">
-  <tr v-bind:class="[ isMarketOpen(market) ? 'bg-success' : 'bg-danger', '']" v-show="show">
-    <th scope="row">{{ market.name }} <span class="hidden">{{ market.hidden }}</span></th>
-    <td class="hidden-md-down">{{market.id}}</td>
-    <td>{{market.city}}, {{market.country}} ({{ timeZone }}{{timeDifference(market.tz)}})</td>
-    <td>{{market.open}}</td>
-    <td>{{market.close}}</td>
-    <td>{{market.lunch}}</td>
+<template>
+  <tr v-bind:class="[ isMarketOpenWrapper(market) ? 'bg-success' : 'bg-danger', '']" v-show="show">
+    <td scope="row" :colspan="colspanValue">
+      <a v-on:click="test=!test;colspanValue=(test?1:6)" style="color:white;cursor:pointer">
+        <strong>{{ market.name }}</strong>
+        <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <span class="hidden">{{ market.hidden }}</span>
+
+      <market-summary class="market-summary row"
+                      v-bind:market="market"
+                      v-if="test === false"></market-summary>
+    </td>
+
+    <td v-if="test" class="hidden-md-down">{{market.id}}</td>
+    <td v-if="test">{{market.city}}, {{market.country}}
+      ({{ timeZone }}{{ shared.timeDifference(market.tz) }})
+    </td>
+    <td v-if="test">{{market.open}}</td>
+    <td v-if="test">{{market.close}}</td>
+    <td v-if="test">{{market.lunch}}</td>
   </tr>
 </template>
 
 <script>
   import moment from 'moment-timezone'
+  import MarketSummary from './MarketSummary.vue'
   import shared from '../shared'
   export default {
+    components: {
+      MarketSummary
+    },
     props: ['market', 'showOpenMarkets', 'showClosedMarkets'],
     data () {
       return {
+        shared: shared,
+        colspanValue: 1,
+        test: true,
         show: true,
         timeZone: moment.tz(shared.clientTz).zoneAbbr()
       }
@@ -25,31 +44,10 @@
        * @param market
        * @returns True if market is open and false if it is closed
        */
-      isMarketOpen: function (market) {
-        const place = moment.tz(market.tz)
-        const opensTime = moment(market.open, 'HH:mm')
-        const closesTime = moment(market.close, 'HH:mm')
+      isMarketOpenWrapper: function (market) {
+        const isOpen = shared.isMarkedOpen(market)
 
-        const o = place.clone().hour(opensTime.hour()).minute(opensTime.minute()).second(0)
-        const c = place.clone().hour(closesTime.hour()).minute(closesTime.minute()).second(0)
-
-        let isOpen
-
-        // Lunch check
-        if ('lunch' in market) {
-          let lunchParts = market['lunch'].split('-')
-          const lBeginTime = moment(lunchParts[0], 'HH:mm')
-          const lEndTime = moment(lunchParts[1], 'HH:mm')
-          isOpen = place.isBetween(o, c) && !place.isBetween(lBeginTime, lEndTime)
-        } else {
-          isOpen = place.isBetween(o, c)
-        }
-
-        // Weekends check
-        if (place.isoWeekday() === 0 || place.isoWeekday() === 7) {
-          isOpen = false
-        }
-
+        // TODO
         // Public holiday check per exchange
 
         if (isOpen) {
@@ -58,13 +56,6 @@
           this.show = this.showClosedMarkets
         }
         return isOpen
-      },
-
-      timeDifference: function (otherTz) {
-        const there = moment.tz(otherTz)
-        const here = moment.tz(shared.clientTz)
-        const diff = (there.utcOffset() - here.utcOffset()) / 60
-        return (diff > 0 ? '+' : '') + (diff === 0 ? '+0' : diff)
       }
     }
   }
@@ -73,5 +64,14 @@
 <style scoped>
   .hidden {
     display: none;
+  }
+
+  .market-summary {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 0px;
   }
 </style>

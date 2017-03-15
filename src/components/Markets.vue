@@ -1,4 +1,4 @@
-<template xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<template>
   <div class="container">
 
     <div class="row">
@@ -32,7 +32,7 @@
       <thead>
       <tr>
         <th>Name</th>
-        <th class="hidden-md-down">Code</th>
+        <th class="hidden-md-down">Symbol</th>
         <th>Location</th>
         <th>Open</th>
         <th>Close</th>
@@ -44,7 +44,8 @@
                    v-bind:market="m"
                    v-bind:show-open-markets="showOpenMarkets"
                    v-bind:show-closed-markets="showClosedMarkets"
-                   :key="m.id"></market-item>
+                   :key="m.id">
+      </market-item>
       </tbody>
     </table>
 
