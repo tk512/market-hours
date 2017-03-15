@@ -22,7 +22,7 @@
             <a class="nav-link" href="#/about">About</a>
           </li>
         </ul>
-        <span class="badge badge-pill badge-default test" id="your-time">
+        <span class="badge badge-pill badge-default" id="your-time">
         Your Time: {{ localTimeDisplayed }}
           <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
         </span>
@@ -76,6 +76,8 @@
 
   #your-time {
     background-color: #585858;
-    padding: 15px 10px 10px 10px;
+    height: 25px;
+    margin-top: 8px;
+    padding-top: 8px;
   }
 </style>

@@ -10,12 +10,17 @@
         <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
-        </span> Supports {{ marketCount }} (and counting!) stock and future exchanges worldwide.
+        </span> Currently supports {{ marketCount }} stock and future exchanges worldwide.
         </li>
         <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
         </span> Updates in real-time - no need to refresh your browser
+        </li>
+        <li class="about-item">
+        <span class="badge badge-pill badge-primary">
+          <i class="fa fa-info" aria-hidden="true"></i>
+        </span> Expanding a market shows a countdown to opening/closing bells
         </li>
         <li class="about-item">
         <span class="badge badge-pill badge-primary">
