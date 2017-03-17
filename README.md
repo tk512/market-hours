@@ -30,4 +30,4 @@ npm test
 ```
 
 ## Screenshot of <a href="https://markethours.today">markethours.today</a>
-<img src="https://raw.githubusercontent.com/tk512/market-hours/master/static/markethours-screenshot.png">
+<img src="https://raw.githubusercontent.com/tk512/market-hours/master/static/markethours.today-screenshot.png">
