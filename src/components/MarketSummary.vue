@@ -40,11 +40,15 @@
     const opensTime = moment(market.open, 'HH:mm')
 
     let addDays = 0
-    if (opensTime.hour() < place.hour()) {
-      addDays = 1
+    if (place.isoWeekday() > 0 && place.isoWeekday() < 7) {
+      if (opensTime.hour() < place.hour()) {
+        addDays = 1
+      }
       if (place.isoWeekday() === 6) {
         addDays += 1
       }
+    } else if (place.isoWeekday() === 7) { // Handle Sundays
+      addDays += 1
     }
 
     const opensInSeconds = (place.clone()
