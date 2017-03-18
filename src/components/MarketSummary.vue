@@ -42,6 +42,9 @@
     let addDays = 0
     if (opensTime.hour() < place.hour()) {
       addDays = 1
+      if (place.isoWeekday() === 6) {
+        addDays += 1
+      }
     }
 
     const opensInSeconds = (place.clone()
