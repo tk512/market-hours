@@ -31,7 +31,7 @@ export default {
     }
 
     // Weekends check
-    if (place.isoWeekday() === 0 || place.isoWeekday() === 7) {
+    if (place.isoWeekday() === 0 || place.isoWeekday() === 6 || place.isoWeekday() === 7) {
       isOpen = false
     }
     return isOpen
