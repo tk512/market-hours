@@ -35,24 +35,22 @@
   import moment from 'moment-timezone'
   import shared from '../shared'
 
+  function addDaysIfWeekend (isoWeekday) {
+    if (isoWeekday === 6) {
+      return 2
+    } else if (isoWeekday === 7) {
+      return 1
+    } else {
+      return 0
+    }
+  }
+
   function countdownToOpeningBell (market) {
     const place = moment.tz(market.tz)
     const opensTime = moment(market.open, 'HH:mm')
 
-    let addDays = 0
-    if (place.isoWeekday() > 0 && place.isoWeekday() < 7) {
-      if (opensTime.hour() < place.hour()) {
-        addDays = 1
-      }
-      if (place.isoWeekday() === 6) {
-        addDays += 1
-      }
-    } else if (place.isoWeekday() === 7) { // Handle Sundays
-      addDays += 1
-    }
-
     const opensInSeconds = (place.clone()
-        .day(place.day() + addDays)
+        .day(place.day() + addDaysIfWeekend(place.isoWeekday()))
         .hour(opensTime.hour())
         .minute(opensTime.minute())
         .second(0) - place) / 1000
