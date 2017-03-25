@@ -36,13 +36,7 @@
   import shared from '../shared'
 
   function addDaysIfWeekend (isoWeekday) {
-    if (isoWeekday === 6) {
-      return 2
-    } else if (isoWeekday === 7) {
-      return 1
-    } else {
-      return 0
-    }
+    return isoWeekday === 6 ? 2 : isoWeekday === 7 ? 1 : 0
   }
 
   function countdownToOpeningBell (market) {

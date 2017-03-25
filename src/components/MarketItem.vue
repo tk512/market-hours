@@ -26,6 +26,7 @@
   import moment from 'moment-timezone'
   import MarketSummary from './MarketSummary.vue'
   import shared from '../shared'
+
   export default {
     components: {
       MarketSummary
@@ -47,9 +48,6 @@
        */
       isMarketOpenWrapper: function (market) {
         const isOpen = shared.isMarkedOpen(market)
-
-        // TODO
-        // Public holiday check per exchange
 
         if (isOpen) {
           this.show = this.showOpenMarkets
