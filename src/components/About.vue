@@ -15,7 +15,7 @@
         <li class="about-item">
         <span class="badge badge-pill badge-primary">
           <i class="fa fa-info" aria-hidden="true"></i>
-        </span> Updates in real-time - no need to refresh your browser
+        </span> Open/Closed updates happen in real-time - bank holidays included
         </li>
         <li class="about-item">
         <span class="badge badge-pill badge-primary">
