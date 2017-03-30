@@ -13,7 +13,7 @@
     </td>
 
     <td v-if="inRowMode" class="hidden-md-down">{{market.id}}</td>
-    <td v-if="inRowMode">{{market.city}}, {{market.country}}
+    <td v-if="inRowMode" class="hidden-md-down">{{market.city}}, {{market.country}}
       ({{ timeZone }}{{ shared.timeDifference(market.tz) }})
     </td>
     <td v-if="inRowMode">{{market.open}}</td>

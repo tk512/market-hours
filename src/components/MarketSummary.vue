@@ -2,22 +2,22 @@
   <div class="row">
     <div class="col market-overview">
       <dl class="row overview-row">
-        <dt class="col-sm-4">Symbol</dt>
-        <dd class="col-8">{{market.id}}</dd>
+        <dt class="col-4 col-sm-4">Symbol</dt>
+        <dd class="col-8 col-sm-offset-0">{{market.id}}</dd>
       </dl>
       <dl class="row overview-row">
-        <dt class="col-sm-4">Location</dt>
-        <dd class="col-8">{{market.city}}, {{market.country}}
+        <dt class="col-4 col-sm-4">Location</dt>
+        <dd class="col-8 col-sm-offset-0">{{market.city}}, {{market.country}}
           ({{ timeZone }}{{ shared.timeDifference(market.tz) }})
         </dd>
       </dl>
       <dl class="row overview-row">
-        <dt class="col-sm-4">Opens</dt>
-        <dd class="col-8">{{market.open}}</dd>
+        <dt class="col-4 col-sm-4">Opens</dt>
+        <dd class="col-8 col-sm-offset-0">{{market.open}}</dd>
       </dl>
       <dl class="row overview-row">
-        <dt class="col-sm-4">Closes</dt>
-        <dd class="col-8">{{market.close}}</dd>
+        <dt class="col-4 col-sm-4">Closes</dt>
+        <dd class="col-8 col-sm-offset-0">{{market.close}}</dd>
       </dl>
     </div>
     <div class="card">
@@ -43,8 +43,14 @@
     const place = moment.tz(market.tz)
     const opensTime = moment(market.open, 'HH:mm')
 
+    let addedDays = addDaysIfWeekend(place.isoWeekday())
+    // If it only opens the day after, we add a day
+    if (opensTime.hour() < place.hour()) {
+      addedDays += 1
+    }
+
     const opensInSeconds = (place.clone()
-        .day(place.day() + addDaysIfWeekend(place.isoWeekday()))
+        .day(place.day() + addedDays)
         .hour(opensTime.hour())
         .minute(opensTime.minute())
         .second(0) - place) / 1000

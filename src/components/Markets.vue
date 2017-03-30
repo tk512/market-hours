@@ -28,12 +28,12 @@
       </div>
     </div>
 
-    <table class="table table-striped table-inverse table-sm">
+    <table class="table table-striped table-inverse table-sm dark-bg">
       <thead>
       <tr>
         <th>Name</th>
         <th class="hidden-md-down">Symbol</th>
-        <th>Location</th>
+        <th class="hidden-md-down">Location</th>
         <th>Open</th>
         <th>Close</th>
         <th>Lunch</th>
